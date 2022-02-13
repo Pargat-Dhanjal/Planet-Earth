@@ -31,10 +31,6 @@ model-viewer{
     width: 90%;
     height: 70vh;
     margin: 20% auto;
-    --poster-color: transparent;
-}
-model-viewer#reveal {
-  --poster-color: transparent;
 }
 #Search-input{
     padding: 0px 10px 0 20px;
