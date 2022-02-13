@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 .page1{
     width:100%;
     height:100vh;
@@ -31,6 +34,9 @@ model-viewer{
     width: 90%;
     height: 70vh;
     margin: 20% auto;
+}
+model-viewer#reveal {
+  --poster-color: transparent;
 }
 #Search-input{
     padding: 0px 10px 0 20px;
@@ -158,11 +164,13 @@ border-radius: 0 50px 50px 0 !important;
      margin-top: 0;
      float:none;
      width:100%;
+     background-image:url(assets/Images/spacebg.gif);
     }
     .right-div{
       margin-top: 0;
       float:none;
       width:100%;
+      background-image:url(assets/Images/spacebg.gif);
      }
     #title-texty{
       margin-top: 0;

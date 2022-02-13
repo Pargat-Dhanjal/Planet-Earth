@@ -4,6 +4,7 @@
     const elem = document.querySelector(".page1");
     const elem2 = document.querySelector(".page2");
     const elem3 = document.querySelector(".page3");
+    const elem4=document.querySelector("#stats");
     // Magic happens here
     function parallax(e) {
         let _w = window.innerWidth/2;
@@ -18,6 +19,7 @@
         elem.style.backgroundPosition = x;
         elem2.style.backgroundPosition = x;
         elem3.style.backgroundPosition = x;
+        elem4.style.backgroundPosition = x;
     }
 
 })();
