@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Planet Earth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+  </head>
+  <body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#earth">
+          <img src="assets/favicon_io/android-chrome-512x512.png" alt="icon" width="25" height="25" class="d-inline-block align-text-top">
+          Planet Earth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item px-3 earth">
+              <a class="nav-link active" aria-current="page" href="#earth">Earth</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="stats.html">Statistics</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="community.html">Community</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page 1 -->
+    <div class="page1" id="home">
+      <div class="left-div">        
+          <div class="cardz">
+            <h1 id="title-texty">One Search away for all the weather information about your city.</h1>
+            <div class="card text-center col-lg-12">
+              <div class="weather-card card-body">
+                <div class="mb-3">
+                  <input type="text" id="Search-input" onkeypress="enterChecker(event)" placeholder="Enter City Name">
+                  <!-- <br> -->
+                  <button type="submit" onclick="geolocation()" class="btn-lg btn-dark" id="Search-btn"><span class="search-txt">Search</span></button>
+                </div>
+                </div>
+              <div class="weather card-footer text-muted" >
+                <div class="x-button"><button onclick="titleRev()">X</button>
+        </div>
+                  <h3 id="city-name">Search Your City!</h3>
+                  <h6 id="date"></h6>
+                  <h4 class="temp"></h4>
+                  <img id="city-image"src="" alt="">
+                  <h6 id="alt-temp" class="grey"></h6>
+                  <img src="" alt="" id="weather-icon">
+                  <h4 id="desc"></h4>
+                  <h5 id="humidity" class="grey"></h5>
+                  <h5 id="pressure" class="grey"></h5>
+                  <h5 id="wind-speed" class="grey"></h5>
+              </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div id="earth"></div>
+        <div class="right-div" >
+            <model-viewer auto-rotate seamless-poster poster="assets/Earth/poster.png" camera-controls loading="eager" disable-zoom src="assets/Earth/Earth_1_12756.gltf" camera-orbit="270deg 75deg 105%" camera-controls auto-rotate ar ios-src="assets/Earth/Earth_1_12756.usdz"> </model-viewer>
+          </div>
+        </div>
+      
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/parallax.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
