@@ -1,9 +1,7 @@
 
-# Planet Earth
+# 🌍 Planet Earth
 
 Made this as a project for Major League Hackathon in which I participated with my friends. Used various APIs to build this project.  
-
-![Logo](https://github.com/Pargat-Dhanjal/Planet-Earth/blob/master/assets/favicon_io/android-chrome-512x512.png)
 
 
 ## Features
@@ -13,10 +11,15 @@ Made this as a project for Major League Hackathon in which I participated with m
 - AR supported
 - Responsive
 
+## APIs Used
+
+- Geocoding API
+- Open Weather API
+- Model Viewer
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img src="https://github.com/Pargat-Dhanjal/Planet-Earth/blob/master/Screenshot.png" alt="screenshot"/>
 
 
 ## Deployment
