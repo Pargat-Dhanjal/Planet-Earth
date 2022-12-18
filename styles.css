@@ -408,4 +408,34 @@ background: linear-gradient(135deg, rgb(15, 13, 13) 15%,blue 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
 }
 
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+  font-weight: bold;
+  /* transition: text-decoration 5s ease-in-out !important; */
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+}
+.navbar-light .navbar-brand {
+  color: rgb(255 255 255);
+  margin-left: 100px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+.bg-dark{
+  backdrop-filter: blur(6px)!important;
+  background-color: rgb(44 43 43 / 10%)!important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 
